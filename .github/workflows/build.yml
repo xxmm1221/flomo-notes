@@ -21,12 +21,14 @@ jobs:
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
 
-    - name: Install Gradle
+    - name: Install Gradle 8.1
       run: |
-        sudo apt-get update
-        sudo apt-get install -y gradle
+        wget https://services.gradle.org/distributions/gradle-8.1.1-bin.zip
+        unzip gradle-8.1.1-bin.zip
+        sudo mv gradle-8.1.1 /opt/gradle
+        sudo ln -s /opt/gradle/bin/gradle /usr/local/bin/gradle
 
-    - name: Build APK (without wrapper)
+    - name: Build APK
       run: |
         gradle assembleDebug --no-daemon
 
