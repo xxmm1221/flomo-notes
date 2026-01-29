@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="内容"
+        android:textSize="14sp"
+        android:textColor="#2c3e50"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/editTextContent"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="top"
+        android:hint="记录你的想法..."
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标签"
+        android:textSize="14sp"
+        android:textColor="#2c3e50"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/editTextTags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="标签用空格分隔，如：工作 想法"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:inputType="text" />
+
+</LinearLayout>
