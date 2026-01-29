@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+    namespace 'com.flomonotes'
     compileSdk 34
 
     defaultConfig {
